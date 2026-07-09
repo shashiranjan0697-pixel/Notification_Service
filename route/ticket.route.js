@@ -10,11 +10,11 @@ router.post("/notification",
         ticketController.create
     );
 
-router.post("/notifications",
+router.get("/notifications",
         ticketController.getAllTicket
     );
 
-router.post("/notification/:ticketId",
+router.get("/notification/:ticketId",
         ticketController.getById
     );
 
