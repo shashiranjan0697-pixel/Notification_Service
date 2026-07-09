@@ -10,5 +10,13 @@ router.post("/notification",
         ticketController.create
     );
 
+router.post("/notifications",
+        ticketController.getAllTicket
+    );
+
+router.post("/notification/:ticketId",
+        ticketController.getById
+    );
+
 
 module.exports = router;
