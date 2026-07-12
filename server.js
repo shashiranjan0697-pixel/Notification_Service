@@ -22,6 +22,12 @@ connectDB();
 
 const port = 3000 || process.env.PORT;
 
+app.get('/', (req, res) => {
+    res.send(`
+        <h1>This is Home Page of Notification Service</h1>
+    `);
+});
+
 app.listen(port , async () =>{
     
     // mailerCron();
